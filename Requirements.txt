@@ -24,7 +24,10 @@ mypy-extensions==1.0.0
 packaging==24.2
 pathspec==0.12.1
 platformdirs==4.3.6
+psycopg==3.2.5
+psycopg-binary==3.2.5
 pydantic==2.10.6
+pydantic-settings==2.8.1
 pydantic_core==2.27.2
 Pygments==2.19.1
 python-dotenv==1.0.1
@@ -38,6 +41,7 @@ SQLAlchemy==2.0.38
 starlette==0.46.0
 typer==0.15.2
 typing_extensions==4.12.2
+tzdata==2025.1
 uvicorn==0.34.0
 watchfiles==1.0.4
 websockets==15.0
