@@ -7,7 +7,7 @@ from sqlalchemy.ext.asyncio import (
     AsyncSession,
 )
 
-from back_end.core.config import settings
+from core.config import settings
 
 
 class DatabaseHelper:
@@ -36,9 +36,16 @@ class DatabaseHelper:
     async def dispose(self) -> None:
         await self.engine.dispose()
 
-    async def session_getter(self) -> AsyncGenerator[AsyncSession, None]:
+    async def get_session(self) -> AsyncGenerator[AsyncSession, None]:
         async with self.session_factory() as session:
             yield session
 
 
+# Создаем экземпляр DatabaseHelper
 db_helper = DatabaseHelper()
+
+
+# Асинхронная функция для получения сессии
+async def get_db() -> AsyncGenerator[AsyncSession, None]:
+    async for session in db_helper.get_session():
+        yield session
