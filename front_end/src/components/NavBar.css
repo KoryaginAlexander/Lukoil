@@ -1,0 +1,30 @@
+/* Навигационная панель */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    width: 100%;
+  }
+  
+  /* Логотип */
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  /* Фильтры */
+  .filters {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .filter {
+    padding: 5px 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    color: #333;
+  }

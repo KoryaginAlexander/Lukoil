@@ -1,0 +1,112 @@
+/* Основной контейнер */
+.login-layout {
+    display: flex;
+    height: 100vh;
+    background: linear-gradient(to right, red, black); /* Градиент из красного в черный */
+  }
+  
+  /* Левая часть: блок логина */
+  .login-side {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px; /* Отступы от границ экрана */
+    max-width: 50%; /* Ограничение ширины блока логина */
+  }
+  
+  /* Блок формы */
+  .login-box {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px; /* Увеличиваем максимальную ширину формы */
+  }
+  
+  /* Правая часть: фото */
+  .image-side {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px; /* Отступы от границ экрана */
+    max-width: 50%; /* Ограничение ширины блока с фото */
+  }
+  
+  .image-side img {
+    width: 100%; /* Растягиваем изображение на всю ширину блока */
+    max-width: 600px; /* Увеличиваем максимальную ширину изображения */
+    height: auto; /* Сохраняем пропорции изображения */
+    border-radius: 8px; /* Закругленные углы для фото */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Тень для фото */
+  }
+  
+  /* Заголовок */
+  .login-box h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+  }
+  
+  /* Группа полей формы */
+  .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .form-group input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  /* Кнопка входа */
+  .login-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .login-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Ссылка на регистрацию */
+  .register-link {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+    text-align: center;
+  }
+  
+  .register-link a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .register-link a:hover {
+    text-decoration: underline;
+  } 
